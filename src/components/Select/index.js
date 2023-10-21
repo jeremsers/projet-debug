@@ -32,7 +32,7 @@ const Select = ({
             <>
               {!titleEmpty && (
                 <li onClick={() => changeValue("Toutes") }>
-                  <input defaultChecked={value === "Toutes"} name="selected" type="radio" />{" "}
+                  <input defaultChecked={value === "Toutes" || !value} name="selected" type="radio" />{" "}
                   Toutes
                 </li>
               )}
